@@ -1,0 +1,44 @@
+
+geeksforgeeks
+search icon
+Courses
+Tutorials
+Practice
+Jobs
+My Profile
+
+
+Change Language
+
+
+
+Refresh
+
+Time (IST)	Status	Marks	Lang	Test Cases	Code
+2026-06-10 10:27:38	Correct	
+0Info
+java	1111 / 1111	View
+2026-06-09 21:07:37	Correct	
+2
+java	1111 / 1111	View
+class Solution {
+    void selectionSort(int[] arr) {
+        int n = arr.length;
+
+        for (int i = 0; i < n - 1; i++) {
+            int minIndex = i;
+
+            // Find the minimum element
+            for (int j = i + 1; j < n; j++) {
+                if (arr[j] < arr[minIndex]) {
+                    minIndex = j;
+                }
+            }
+
+            // Swap
+            int temp = arr[i];
+            arr[i] = arr[minIndex];
+            arr[minIndex] = temp;
+        }
+    }
+}
